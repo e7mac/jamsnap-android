@@ -9,4 +9,9 @@
     <string name="logout">Log out</string>
     <string name="app_id">110734345698130</string>
 
+    <string name="loading_please_wait">Loading JamSnaps </string>
+    <string name="content_picture">User gravatar</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
 </resources>

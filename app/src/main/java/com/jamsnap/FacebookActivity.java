@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.facebook.*;
 import com.facebook.model.*;
 
-public class MainActivity extends Activity {
+public class FacebookActivity extends Activity {
 
     private static final String URL_PREFIX_FRIENDS = "https://graph.facebook.com/me/friends?access_token=";
 

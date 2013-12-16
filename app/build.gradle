@@ -10,14 +10,12 @@ apply plugin: 'android'
 
 repositories {
     mavenCentral()
-    maven {
-        url "http://metafedora.github.io/facebook-api-android-aar"
-    }
+    maven { url 'http://metafedora.github.io/facebook-api-android-aar' }
 }
 
 android {
     compileSdkVersion 16
-    buildToolsVersion "19.0.0"
+    buildToolsVersion '19.0.0'
 
     defaultConfig {
         minSdkVersion 8
@@ -26,8 +24,13 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:appcompat-v7:+'
-    compile fileTree(dir: 'libs', include: '*.jar') // this includes all .jar libs
-    compile 'com.facebook:facebook-android-sdk:3.5.2@aar' // this downloads facebookSDK
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.facebook:facebook-android-sdk:3.5.2@aar'
+    compile 'com.octo.android.robospice:robospice:1.4.9'
+    compile 'com.octo.android.robospice:robospice-retrofit:1.4.9'
+    compile 'com.octo.android.robospice:robospice-okhttp:1.4.9'
+    compile 'com.octo.android.robospice:robospice-ui-spicelist:1.4.9'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.11'
+    compile 'org.codehaus.jackson:jackson-core-asl:1.9.11'
 }
 

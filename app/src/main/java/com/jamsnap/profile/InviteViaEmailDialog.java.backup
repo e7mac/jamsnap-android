@@ -1,0 +1,33 @@
+package com.jamsnap.profile;
+
+
+import android.content.Context;
+import android.content.DialogInterface;
+import android.preference.DialogPreference;
+import android.util.AttributeSet;
+
+public class InviteViaEmailDialog extends DialogPreference {
+    Context mContext;
+
+    public InviteViaEmailDialog(Context context) {
+        this(context, null);
+    }
+
+    public InviteViaEmailDialog(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public InviteViaEmailDialog(Context context, AttributeSet attrs,
+                       int defStyle) {
+        super(context, attrs, defStyle);
+        mContext = context;
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        super.onClick(dialog, which);
+        if (DialogInterface.BUTTON_POSITIVE == which) {
+            //LaunchEmailUtil.launchEmailToIntent(mContext);
+        }
+    }
+}

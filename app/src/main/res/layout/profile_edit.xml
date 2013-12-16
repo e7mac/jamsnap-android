@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_first_preferencescreen_key"
+    android:title="Profile" android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+    <PreferenceCategory
+        android:title="Account">
+        <Preference
+            android:key="pref_email"
+            android:title="Email"/>
+        <Preference
+            android:key="pref_reset"
+            android:title="Reset Password"/>
+        <Preference
+            android:key="pref_content"
+            android:title="Your content"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Social">
+        <Preference
+            android:key="pref_tumblr"
+            android:title="Tumblr"/>
+        <Preference
+            android:key="pref_twitter"
+            android:title="Twitter"/>
+        <Preference
+            android:key="pref_appnet"
+            android:title="App.net"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Support">
+        <Preference
+            android:key="pref_feedback"
+            android:title="Feedback"/>
+        <Preference
+            android:key="pref_terms"
+            android:title="Terms of Service"/>
+        <Preference
+            android:key="pref_privacy"
+            android:title="Privacy Policy"/>
+        <Preference
+            android:key="pref_attribution"
+            android:title="Attribution"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Logout">
+        <Preference
+            android:key="pref_logout"
+            android:title="Logout"/>
+    </PreferenceCategory>
+</PreferenceScreen>
