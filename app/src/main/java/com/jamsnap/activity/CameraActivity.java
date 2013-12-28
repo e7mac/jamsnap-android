@@ -3,10 +3,12 @@ package com.jamsnap.activity;
 import android.app.Activity;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Toast;
+import android.hardware.Camera.CameraInfo;
 
 import com.jamsnap.R;
 
@@ -32,8 +34,32 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback, 
         // TODO: depricated
         _surfaceView.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
-        //TODO: Returns null if no camera?
-        _camera = Camera.open();
+        // TODO: On some devices, this method may take a long time to complete.
+        // It is best to call this method from a  worker thread android.os.AsyncTask to avoid
+        // blocking the main application UI thread.
+        _camera = getCameraInstance(CameraInfo.CAMERA_FACING_FRONT);
+        if (_camera == null) {
+            _camera = getCameraInstance(CameraInfo.CAMERA_FACING_BACK);
+            if (_camera == null) {
+                Log.w("Camera", "Camera(s) detected but was not CAMERA_FACING_BACK or CAMERA_FACING_FRONT.");
+            }
+        }
+    }
+
+    private static Camera getCameraInstance(int instance) {
+        Camera c = null;
+        try {
+            // TODO: Check API level 9?
+            c = Camera.open(instance);
+        }
+        catch (Exception e) {
+            // TODO: If the same camera is opened by other applications, this will throw a RuntimeException.
+            //       Inform user?
+            e.printStackTrace();
+            Log.w("Camera", "Camera is not available (in use or does not exist).");
+        }
+
+        return c;
     }
 
     @Override

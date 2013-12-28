@@ -103,7 +103,7 @@ public class RecordActivity extends Activity implements MediaPlayer.OnCompletion
 
     private void resetRecorder() {
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        recorder.setOutputFormat(MediaRecorder.OutputFormat.AAC_ADTS);
         recorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
         Log.d("Reset", path.getAbsolutePath());
         recorder.setOutputFile(path.getAbsolutePath());
