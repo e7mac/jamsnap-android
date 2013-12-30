@@ -1,4 +1,4 @@
-package com.jamsnap.model;
+package com.pixaura.model;
 
 import java.util.ArrayList;
 

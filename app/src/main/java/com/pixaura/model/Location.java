@@ -1,18 +1,14 @@
-package com.jamsnap.model;
+package com.pixaura.model;
+
 
 import java.util.ArrayList;
 
-public class Sound {
-
+public class Location {
     public int id;
-    public String url;
-    public String aac;
-    public String ogg;
-    public String file;
-    public String pixaura;
-    public Float posX;
-    public Float posY;
-    public String dateCreated; // TODO: As DateTime
+    public float latitude;
+    public float longitude;
+    public String locality;
+    public String city;
 
     @Override
     public int hashCode() {
@@ -30,11 +26,11 @@ public class Sound {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        Sound other = (Sound) obj;
+        Location other = (Location) obj;
         return id == other.id;
     }
 
     @SuppressWarnings("serial")
-    public static class List extends ArrayList<Sound> {
+    public static class List extends ArrayList<Location> {
     }
 }

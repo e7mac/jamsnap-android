@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
 apply plugin: 'android'
@@ -14,12 +14,28 @@ repositories {
 }
 
 android {
-    compileSdkVersion 16
-    buildToolsVersion '19.0.0'
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
 
     defaultConfig {
         minSdkVersion 10
-        targetSdkVersion 16
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    /* https://groups.google.com/forum/#!topic/adt-dev/bl5Rc4Szpzg */
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
     }
 }
 
@@ -33,4 +49,3 @@ dependencies {
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.11'
     compile 'org.codehaus.jackson:jackson-core-asl:1.9.11'
 }
-

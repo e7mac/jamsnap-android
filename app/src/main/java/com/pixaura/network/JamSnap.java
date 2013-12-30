@@ -1,6 +1,6 @@
-package com.jamsnap.network;
+package com.pixaura.network;
 
-import com.jamsnap.model.Items;
+import com.pixaura.model.Items;
 
 import retrofit.http.GET;
 

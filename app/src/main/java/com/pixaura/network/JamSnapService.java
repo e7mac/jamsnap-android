@@ -1,8 +1,8 @@
-package com.jamsnap.network;
+package com.pixaura.network;
 
 import android.util.Log;
 
-import com.jamsnap.R;
+import com.pixaura.R;
 import com.octo.android.robospice.retrofit.RetrofitGsonSpiceService;
 import com.squareup.okhttp.OkHttpClient;
 

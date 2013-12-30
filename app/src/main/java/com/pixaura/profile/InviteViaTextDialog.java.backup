@@ -1,4 +1,4 @@
-package com.jamsnap.profile;
+package com.pixaura.profile;
 
 import android.content.Context;
 import android.content.DialogInterface;

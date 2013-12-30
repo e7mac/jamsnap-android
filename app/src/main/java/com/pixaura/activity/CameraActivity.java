@@ -1,4 +1,4 @@
-package com.jamsnap.activity;
+package com.pixaura.activity;
 
 import android.app.Activity;
 import android.hardware.Camera;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 import android.hardware.Camera.CameraInfo;
 
-import com.jamsnap.R;
+import com.pixaura.R;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

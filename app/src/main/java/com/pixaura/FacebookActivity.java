@@ -1,4 +1,4 @@
-package com.jamsnap;
+package com.pixaura;
 
 import android.os.Bundle;
 import android.app.Activity;

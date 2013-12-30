@@ -1,11 +1,12 @@
-package com.jamsnap.model;
+package com.pixaura.model;
 
 import java.util.ArrayList;
 
-public class Like {
+public class User {
+
     public int id;
-    public String pixaura;
-    public User user;
+    public String username;
+    public String profilePicture;
 
     @Override
     public int hashCode() {
@@ -23,11 +24,11 @@ public class Like {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        Like other = (Like) obj;
+        User other = (User) obj;
         return id == other.id;
     }
 
     @SuppressWarnings("serial")
-    public static class List extends ArrayList<Like> {
+    public static class List extends ArrayList<User> {
     }
 }

@@ -1,4 +1,4 @@
-package com.jamsnap.activity;
+package com.pixaura.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,10 +6,10 @@ import android.view.Window;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.jamsnap.R;
-import com.jamsnap.adapter.JamSnapsListAdapter;
-import com.jamsnap.model.Items;
-import com.jamsnap.network.JamSnapsRequest;
+import com.pixaura.R;
+import com.pixaura.adapter.JamSnapsListAdapter;
+import com.pixaura.model.Items;
+import com.pixaura.network.JamSnapsRequest;
 import com.octo.android.robospice.persistence.DurationInMillis;
 import com.octo.android.robospice.persistence.exception.SpiceException;
 import com.octo.android.robospice.request.listener.RequestListener;

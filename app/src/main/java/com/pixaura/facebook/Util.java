@@ -1,4 +1,4 @@
-package com.jamsnap.facebook;
+package com.pixaura.facebook;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 public class Util {
     public static void printAppKeyHash(PackageManager manager) {
         try {
-            PackageInfo info = manager.getPackageInfo("com.jamsnap", PackageManager.GET_SIGNATURES);
+            PackageInfo info = manager.getPackageInfo("com.pixaura", PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());

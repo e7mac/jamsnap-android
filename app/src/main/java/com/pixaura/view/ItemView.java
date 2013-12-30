@@ -1,4 +1,4 @@
-package com.jamsnap.view;
+package com.pixaura.view;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.jamsnap.R;
-import com.jamsnap.model.Item;
+import com.pixaura.R;
+import com.pixaura.model.Item;
 import com.octo.android.robospice.spicelist.SpiceListItemView;
 
 public class ItemView extends RelativeLayout implements SpiceListItemView<Item> {

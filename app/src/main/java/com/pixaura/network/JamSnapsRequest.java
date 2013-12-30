@@ -1,6 +1,6 @@
-package com.jamsnap.network;
+package com.pixaura.network;
 
-import com.jamsnap.model.Items;
+import com.pixaura.model.Items;
 import com.octo.android.robospice.request.retrofit.RetrofitSpiceRequest;
 
 import roboguice.util.temp.Ln;

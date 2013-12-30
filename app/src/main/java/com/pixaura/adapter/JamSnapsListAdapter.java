@@ -1,13 +1,13 @@
-package com.jamsnap.adapter;
+package com.pixaura.adapter;
 
 import java.io.File;
 
 import android.content.Context;
 import android.view.ViewGroup;
 
-import com.jamsnap.model.Item;
-import com.jamsnap.model.Items;
-import com.jamsnap.view.ItemView;
+import com.pixaura.model.Item;
+import com.pixaura.model.Items;
+import com.pixaura.view.ItemView;
 import com.octo.android.robospice.request.okhttp.simple.OkHttpBitmapRequest;
 import com.octo.android.robospice.spicelist.SpiceListItemView;
 import com.octo.android.robospice.spicelist.okhttp.OkHttpBitmapSpiceManager;

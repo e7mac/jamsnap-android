@@ -1,8 +1,8 @@
-package com.jamsnap.activity;
+package com.pixaura.activity;
 
 import android.app.Activity;
 
-import com.jamsnap.network.JamSnapService;
+import com.pixaura.network.JamSnapService;
 import com.octo.android.robospice.SpiceManager;
 
 /**

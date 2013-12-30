@@ -1,4 +1,4 @@
-package com.jamsnap.activity;
+package com.pixaura.activity;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.jamsnap.R;
+import com.pixaura.R;
 
 import java.io.File;
 import java.io.IOException;

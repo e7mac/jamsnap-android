@@ -1,14 +1,11 @@
-package com.jamsnap.model;
-
+package com.pixaura.model;
 
 import java.util.ArrayList;
 
-public class Location {
+public class Like {
     public int id;
-    public float latitude;
-    public float longitude;
-    public String locality;
-    public String city;
+    public String pixaura;
+    public User user;
 
     @Override
     public int hashCode() {
@@ -26,11 +23,11 @@ public class Location {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        Location other = (Location) obj;
+        Like other = (Like) obj;
         return id == other.id;
     }
 
     @SuppressWarnings("serial")
-    public static class List extends ArrayList<Location> {
+    public static class List extends ArrayList<Like> {
     }
 }

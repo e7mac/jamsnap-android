@@ -1,12 +1,18 @@
-package com.jamsnap.model;
+package com.pixaura.model;
 
 import java.util.ArrayList;
 
-public class User {
+public class Sound {
 
     public int id;
-    public String username;
-    public String profilePicture;
+    public String url;
+    public String aac;
+    public String ogg;
+    public String file;
+    public String pixaura;
+    public Float posX;
+    public Float posY;
+    public String dateCreated; // TODO: As DateTime
 
     @Override
     public int hashCode() {
@@ -24,11 +30,11 @@ public class User {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        User other = (User) obj;
+        Sound other = (Sound) obj;
         return id == other.id;
     }
 
     @SuppressWarnings("serial")
-    public static class List extends ArrayList<User> {
+    public static class List extends ArrayList<Sound> {
     }
 }
