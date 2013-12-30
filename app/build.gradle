@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
     compile 'com.facebook:facebook-android-sdk:3.5.2@aar'
     compile 'com.octo.android.robospice:robospice:1.4.9'
     compile 'com.octo.android.robospice:robospice-retrofit:1.4.9'
@@ -48,4 +47,6 @@ dependencies {
     compile 'com.octo.android.robospice:robospice-ui-spicelist:1.4.9'
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.11'
     compile 'org.codehaus.jackson:jackson-core-asl:1.9.11'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:18.0.+'
 }
