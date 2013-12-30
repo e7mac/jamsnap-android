@@ -74,9 +74,8 @@
     <orderEntry type="library" exported="" name="retrofit-1.2.2" level="project" />
     <orderEntry type="library" exported="" name="robospice-retrofit-1.4.9" level="project" />
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-19.0.0" level="project" />
     <orderEntry type="library" exported="" name="okhttp-1.2.1" level="project" />
-    <orderEntry type="library" exported="" name="ComAndroidSupportAppcompatV71900.aar" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-18.0.0" level="project" />
     <orderEntry type="library" exported="" name="robospice-1.4.9" level="project" />
     <orderEntry type="library" exported="" name="robospice-cache-1.4.9" level="project" />
     <orderEntry type="library" exported="" name="jackson-core-asl-1.9.11" level="project" />
