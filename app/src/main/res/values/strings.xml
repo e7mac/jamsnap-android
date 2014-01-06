@@ -15,16 +15,11 @@
     <string name="cancel">Cancel</string>
 
     <!-- Menu & Section Titles -->
-    <string name="menu_feed">Feed</string>
-    <string name="menu_explore">Explore</string>
-    <string name="menu_activity">Activity</string>
-    <string name="menu_profile">Profile</string>
     <string name="title_feed">JamSnap</string>
     <string name="title_explore">Explore</string>
     <string name="title_activity">Activity</string>
     <string name="title_profile">Profile</string>
 
-
-
+    <string name="create_post">Create</string>
 
 </resources>
